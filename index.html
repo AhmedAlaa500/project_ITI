@@ -45,5 +45,25 @@
 
         </footer>
     </div>
+    <script>
+            //alert("hi , i am the firt javasScript code!!!")
+        car={
+            carmodel:"lada",
+            car_color:"red",
+            car_owner:"Ahmed",
+            can_move:()=>{
+                console.log("yes,car can move")
+            }
+        }
+        var footer=document.getElementById("ft");
+        console.log(footer);
+        footer.addEventListener("click",function(){
+            footer.textContent="the footer was clicked";
+            console.log("the footer was clicked");
+            footer.style.backgroundColor="red";
+            var cont=document.getElementById("container");
+            cont.style.display="none"
+        });
+    </script>
 </body>
 </html>
