@@ -1,0 +1,307 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#container{
+    background:lightgrey;
+    width:100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns:  30vw 70vw;
+    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-areas: 
+    "hd hd"
+    "mn sd"
+    "ft ft" 
+    ;
+    
+}
+
+#hd{
+    width: 100vw;
+    height: 10vh;
+    background-color: cadetblue;
+    display: flex;
+    /*flex-direction: column;*/
+    align-items: center;
+    /*align-items: flex-start;
+    align-items: flex-end;
+    justify-content: center;
+    justify-content: space-around;
+    justify-content: ;*/
+    justify-content:space-evenly;
+    grid-area: hd;    
+}
+
+#mn{
+    width: 100vw;
+    height: 80vh;
+    background-color: lightskyblue;
+    /*display: flex;
+    flex-direction: column;*/
+    display:grid;
+    /*grid-template-rows: 1fr 1fr;
+    grid-template-rows: 40vh 40vh;
+    grid-template-columns:1fr 1fr 1fr;
+    /*grid-template-columns: calc(100vh/3)  
+    calc(100vh/3) calc(100vh/3);*/
+   /* gap: 1vh;*/
+  grid-area: mn;
+}
+
+#sd{
+    width: 100vw;
+    height: 80vh;
+    background-color: blueviolet;
+    grid-area: sd;
+}
+
+#ft{
+    width: 100vw;
+    height: 10vh;
+    background-color: dimgrey;
+    grid-area: ft;
+}
+
+#logo{
+    border: 1px solid black;
+    height: 10vh;
+    width:20vw;
+    background-color: aqua;
+
+}
+
+
+#navbar{
+    border: 1px solid black;
+    height: 10vh;
+    width:50vw;
+    background-color: aqua;
+}
+
+.box{
+    width: calc(100vw/3);
+    height: 40vh;
+    border: 1px solid black;
+    /*height: 40vh;*/
+
+
+}
+/*#row01{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#row02{
+    display: flex;
+}
+
+#item01{
+
+ flex:2;
+}
+
+#item02{
+  flex:2;  
+}
+
+#item03{
+   flex:2; 
+}
+
+#item04{
+    flex:2;
+}
+
+#item05{
+    flex:2;  
+} 
+
+#item06{
+    flex:2;
+}*/
+
+    #item01{
+        grid-area: 01;
+  
+   }
+   
+   #item02{
+    grid-area: 02;
+   }
+   
+   #item03{
+    grid-area: 03;
+   }
+   
+   #item04{
+    grid-area: 04;
+   }
+   
+   #item05{
+    grid-area: 05;
+   } 
+   
+   #item06{
+    grid-area: 06;
+   }
+/*-----------------------small device--------------*/
+   @media screen and (max-width:375px){
+       #container{
+           background-color: brown;
+           width:100vw;
+    height: 100vh;
+    display: grid;
+           grid-template-columns:  100vw;
+           grid-template-rows: 20vh 40vh 30vh 10vh;
+           grid-template-areas: 
+           "hd "
+           "mn"
+           "sd " 
+           "ft"
+           
+       }
+
+       #hd{
+        width: 100vw;
+        height: 120vh;
+        background-color: cadetblue;
+        display: flex;
+        flex-direction: column;
+       grid-area: hd;    
+    }
+    
+    #mn{
+        width: 100vw;
+        height: 40vh;
+        background-color: lightskyblue;
+        /*display: flex;
+        flex-direction: column;*/
+        display:grid;
+        /*grid-template-rows: 1fr 1fr;
+        grid-template-rows: 40vh 40vh;
+        grid-template-columns:1fr 1fr 1fr;
+        /*grid-template-columns: calc(100vh/3)  
+        calc(100vh/3) calc(100vh/3);*/
+       /* gap: 1vh;*/
+      grid-area: mn;
+    }
+    
+    #sd{
+        width: 100vw;
+        height: 30vh;
+        background-color: blueviolet;
+        grid-area: sd;
+    }
+    
+    #ft{
+        width: 100vw;
+        height: 10vh;
+        background-color: dimgrey;
+        grid-area: ft;
+    }
+    
+    #logo{
+        border: 1px solid black;
+        height: 14vh;
+        width:100vw;
+        background-color: aqua;
+    
+    }
+    
+    
+    #navbar{
+        border: 1px solid black;
+        height: 6vh;
+        width:100vw;
+        background-color: aqua;
+    }
+    
+    .box{
+        width: calc(100vw/3);
+        height: 40vh;
+        border: 1px solid black;
+        /*height: 40vh;*/
+    
+    
+    }
+    /*#row01{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #row02{
+        display: flex;
+    }
+    
+    #item01{
+    
+     flex:2;
+    }
+    
+    #item02{
+      flex:2;  
+    }
+    
+    #item03{
+       flex:2; 
+    }
+    
+    #item04{
+        flex:2;
+    }
+    
+    #item05{
+        flex:2;  
+    } 
+    
+    #item06{
+        flex:2;
+    }*/
+    
+        #item01{
+            grid-area: 01;
+      
+       }
+       
+       #item02{
+        grid-area: 02;
+       }
+       
+       #item03{
+        grid-area: 03;
+       }
+       
+       #item04{
+        grid-area: 04;
+       }
+       
+       #item05{
+        grid-area: 05;
+       } 
+       
+       #item06{
+        grid-area: 06;
+       }
+       
+   }
+
+   @media screen and (min-width:375px) and (max-width:799px){
+    
+    #container{
+        background-color: brown;
+        width:100vw;
+    height: 100vh;
+    display: grid;
+        grid-template-columns:  100vw;
+        grid-template-rows: 20vh 40vh 30vh 10vh;
+        grid-template-areas: 
+        "hd "
+        "mn"
+        "sd " 
+        "ft"
+        
+    }
+
+   }
